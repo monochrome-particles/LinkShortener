@@ -29,3 +29,7 @@ ALTER DATABASE link_shortener_test OWNER TO link_shortener;
 
 ## Test Procedure
 
+Unit tests are implemented with RSpec. To run all the tests at once,
+
+`$ rspec`
+
