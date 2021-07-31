@@ -1,0 +1,11 @@
+<%= javascript_pack_tag 'links' %>
+<h1>Link Shortener</h1>
+
+<%= form_with model: @link, data: { type: 'json' }, html: { id: 'link_form' }, local: false, url: '/' do |form| %>
+  <%= form.label :URL, "URL:" %>
+  <%= form.text_field :url %>
+  <%= form.submit "Shorten" %>
+  <br />
+  <p class='error' id='error_for_url'></p>
+  <a id='result'></a>
+<% end %>

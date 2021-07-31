@@ -33,3 +33,8 @@ Unit tests are implemented with RSpec. To run all the tests at once,
 
 `$ rspec`
 
+## Caveats
+
+For simplicity's sake, URL validation is not as robust as other services out there.
+
+It currently only accepts and requires http & https protocols.
